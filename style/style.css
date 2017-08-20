@@ -34,7 +34,7 @@ li {
 }
 
   
-a {
+.a {
   display: block;
   padding: 20px;
   padding-left: 50px;
@@ -60,6 +60,11 @@ li a:hover {
   color: pink;
 }
 
+@media only screen and (max-width: 700px) {
+    [class*= "grid"] {
+      display: none;
+    }
+}
 
 #inner-box {
   background-color: #8b8989;
@@ -91,17 +96,20 @@ li a:hover {
   border-radius: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding: auto;
+  
+}
+
+.photoframe {
+  margin: auto;
+  
 }
 
 
 
-
-
 #photo1, #photo2 {
-	max-width: 450px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+	width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;  
 }   
 
 
@@ -133,16 +141,22 @@ p {
 }
 input {
   height: 40px;
-  width: 300px;
+  width: 100%;
+  max-width: 350px;
 }
 .textarea {
   height: 100px;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   resize: none;
 }
 
 i {
   width: 50px;
+}
+
+.link {
+  margin: 10px;
 }
 #ending {
   font-size: 10px;
